@@ -124,12 +124,6 @@ h3,
   transform: translateY(0);
 }
 
-.moment-card .spot {
-  background: radial-gradient(320px circle at var(--x, 50%) var(--y, 50%),
-      var(--ember-soft),
-      transparent 60%);
-}
-
 .wall-strip::-webkit-scrollbar {
   display: none;
 }
