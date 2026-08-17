@@ -202,13 +202,13 @@ export const siteConfig: SiteConfig = {
   ],
 
   planner: {
-    name: "Riya",
+    name: "Vivek",
     role: "trip planner",
     initial: "R",
     statusText: "Usually replies in 12 min",
-    note: "Send your feeling, dates, and group size. Riya maps the route, sends timing and stay options back on chat — no account, no call centre.",
-    phoneDisplay: "+91 99999 99999",
-    phoneIntl: "919999999999",
+    note: "Send your feeling, dates, and group size. Vivek maps the route, sends timing and stay options back on chat — no account, no call centre.",
+    phoneDisplay: "+91 99999 99999 99",
+    phoneIntl: "91999999999999",
   },
 
   formFields: [
@@ -218,7 +218,7 @@ export const siteConfig: SiteConfig = {
       type: "text",
       placeholder: "Aditi Sharma",
       required: true,
-      errorText: "Enter your name so Riya knows who to ask for.",
+      errorText: "Enter your name so Vivek knows who to ask for.",
     },
     {
       id: "city",
@@ -246,7 +246,7 @@ export const siteConfig: SiteConfig = {
       label: "Travel date",
       type: "date",
       required: true,
-      errorText: "A rough date helps Riya check availability.",
+      errorText: "A rough date helps Vivek check availability.",
     },
     {
       id: "group",

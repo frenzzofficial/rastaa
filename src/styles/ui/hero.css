@@ -1,0 +1,25 @@
+/* hero.css — cursor-glow + line-mask styles scoped to the Hero section only. */
+
+.hero-glow {
+  background: radial-gradient(
+    480px circle at var(--x, 50%) var(--y, 50%),
+    var(--ember-soft),
+    transparent 65%
+  );
+}
+
+.hero-line-mask {
+  overflow: hidden;
+  display: block;
+}
+
+.hero-accent-underline {
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-glow {
+    display: none;
+  }
+}
