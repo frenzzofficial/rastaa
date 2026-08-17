@@ -1,13 +1,15 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { appConfig } from "@/packages/configs/app.config";
 import { siteConfig } from "@/packages/configs/data.config";
+import { useImageFromGit } from "@/packages/hooks/useImageFromGit";
 
 const Header = () => {
   const { nav } = siteConfig;
   const [open, setOpen] = useState(false);
+  const logoUrl = useImageFromGit(appConfig.logo);
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50">
@@ -16,7 +18,7 @@ const Header = () => {
           href="#"
           className="font-display text-lg font-semibold tracking-tight"
         >
-          <Image src="/logo.png" alt="logo" width={150} height={100} />
+          <Image src={logoUrl} alt="logo" width={150} height={100} />
         </Link>
 
         <div className="hidden gap-8 text-black text-[13px] sm:flex">

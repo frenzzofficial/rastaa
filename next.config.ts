@@ -9,9 +9,15 @@ const repoName = "rastaa";
 const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
+    images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "**.githubusercontent.com" },
+      { protocol: "https", hostname: "i.ibb.co" },
+    ],
+    unoptimized: true
+  },
 
   output: "export", // static HTML export -> ./out
-  images: { unoptimized: true }, // next/image has no server on GitHub Pages
   basePath: isProd ? `/${repoName}` : "",
   assetPrefix: isProd ? `/${repoName}/` : "",
   trailingSlash: true, // GitHub Pages serves /route/index.html cleanly
